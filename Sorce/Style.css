@@ -1,0 +1,620 @@
+/* Navegation Bar Styleing  */
+
+.my_nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+#home_icon {
+    width: 5%;
+    margin-right: 10px;
+}
+
+.nav_img_home {
+    width: 44px;
+    height: 44px;
+}
+
+#nav_nameSection {
+    display: flex;
+    border: 2px solid rgba(0, 255, 255, 0.250);
+    width: 15%;
+    height: 100%;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    border-right-color: transparent;
+    background-color: rgba(0, 255, 255, 0.250);
+    align-items: center;
+}
+
+#nav_nameSection h6 {
+    margin: auto;
+    margin-left: 5px;
+}
+
+#navArch1 {
+    /* Create the circle */
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: -20pX;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+#nav_contant {
+    border-top: 2px solid rgba(0, 255, 255, 0.250);
+    border-bottom: 2px solid rgba(0, 255, 255, 0.250);
+    width: 40%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(0, 255, 255, 0.250);
+    border-radius: 37px;
+    z-index: 1;
+}
+
+#nav_contant h6 {
+    margin: auto;
+    margin-left: 5px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.contant_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 0px;
+
+}
+
+.contant_list li {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+#navArch2 {
+    /* Create the circle */
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    margin-left: auto;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+
+}
+
+#nav_social {
+    display: flex;
+    justify-content: space-between;
+
+    width: 20%;
+    height: 100%;
+    border: 2px solid rgba(0, 255, 255, 0.250);
+
+    border-left-color: transparent;
+    background-color: rgba(0, 255, 255, 0.250);
+    margin-left: -25px;
+    padding-left: 40px;
+}
+
+#nav_social a {
+    height: 90%;
+    align-items: center;
+}
+
+.nav_imgs {
+    width: 70%;
+    height: 100%;
+    border-radius: 50%;
+    justify-content: space-evenly;
+
+}
+
+/* Navegation Bar Styleing End  */
+
+
+/* Start of  About Styleing   */
+#About_Me {
+    margin: auto;
+    width: 80%;
+    margin-top: 15px;
+}
+
+
+
+.Main_img {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2px;
+    height: 100%;
+
+}
+
+.Main_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Main_About {
+
+    position: relative;
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.Main_text {
+    width: 63%;
+    height: 100%;
+    left: 37%;
+    position: absolute;
+    background-color: rgba(192, 218, 240, 0.321);
+    padding: 10px;
+    object-fit: cover;
+
+}
+
+.Main_text h1,
+.Main_text h4 {
+    font-size: 1em;
+}
+
+.Main_text_contant {
+
+    margin-top: 20%;
+    padding-left: 5%;
+    position: sticky;
+
+}
+
+/* End of About Styleing  */
+
+/* Start of Contact Box Styleing  */
+#contact_Box {
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    margin-top: 30px;
+    background-color: rgba(192, 218, 240, 0.321);
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    border: 2px dotted;
+
+
+}
+
+.wana_contact_text {
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 6%;
+}
+
+.button_contact {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 20%;
+    height: 25%;
+    bottom: 20%;
+    right: 5%;
+
+}
+
+.button_contact:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/* End of Contact Box Styleing  */
+
+/* Start of Main Box Styleing  */
+#Main_Contant {
+    margin: auto;
+    width: 80%;
+    margin-top: 30px;
+    background-color: rgba(192, 218, 240, 0.321);
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* How am I Section */
+#Main_Contant h3 {
+    padding-top: 5%;
+    text-align: center;
+}
+
+#Main_Contant p {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+#Main_Contant hr {
+    background-color: #0000008e;
+    border: 2px solid #0000008e;
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Qualification Section */
+.Qualification_Box {
+    width: 80%;
+    padding: 6%;
+    background-color: rgba(255, 255, 255, 0.615);
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.QBox {
+    width: 160px;
+    height: 320px;
+    transform: skew(5deg);
+    border-radius: 10px;
+    margin-bottom: 3%;
+    position: relative;
+    border: 2px solid;
+    background-color: #0000008e;
+    color: white;
+}
+
+.QBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+    width: 98%;
+    height: 98%;
+}
+
+.QBox img:hover {
+    display: none;
+    color: rgb(191, 255, 0);
+
+}
+
+.QBox h5 {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+/* End of Main Box Styleing  */
+/*Start of Back to Top stayling */
+.Back_to_Top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Back_to_Top a {
+    width: 6%;
+    height: 6%;
+}
+
+.Back_to_Top img {
+    width: 100%;
+    height: 100%;
+}
+
+.Back_to_Top img:hover {
+    background-color: #f44336;
+    border-radius: 50%;
+}
+
+/*End of Back to Top stayling */
+/*Start of footer stayling */
+footer {
+
+    width: 80%;
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 40px;
+    background-color: rgba(0, 255, 255, 0.250);
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+footer ul {
+
+    background-color: aliceblue;
+    border-radius: 17px;
+    display: flex;
+    width: 27%;
+    justify-content: space-between;
+    margin: 0%;
+    align-items: center;
+    height: 70%;
+    padding-right: 32px;
+
+}
+
+footer ul li p,
+footer p {
+
+    color: #000000;
+    margin: 0;
+
+
+}
+
+footer ul li p:hover {
+    background-color: #f44336;
+    color: white;
+    border-radius: 30%;
+}
+
+footer ul li {
+    list-style: none;
+
+}
+
+/*End of footer stayling */
+
+/* **************************************** Main Page End *************************************************/
+
+/* ************************************* Projects Page Start **********************************************/
+#Project_Main_Box {
+    width: 80%;
+    margin: auto;
+}
+
+/* Slide Show Start */
+.Intro {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Intro hr {
+    background-color: rgb(255, 255, 255);
+    border-top: 7px dotted #676a6a;
+    width: 35%;
+    margin: auto;
+}
+
+.Intro h4 {
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.carousel {
+    border: 3px dashed black;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+/* Slide Show End */
+
+/* Tasks Section Start */
+
+.Tasks_Box {
+    width: 100%;
+    padding: 6%;
+    padding-bottom: 2%;
+    background-color: #88b5b5ac;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 3px dashed black;
+}
+
+.TBox {
+    width: 360px;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    position: relative;
+    border: 2px solid;
+    background-color: #0000008e;
+    color: white;
+}
+
+.TBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: absolute;
+    border-radius: 10px;
+    width: 98%;
+    height: 98%;
+}
+
+.TBox img:hover {
+    display: none;
+    color: rgb(191, 255, 0);
+
+}
+
+.TBox h5 {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+/* Tasks Section Start */
+
+/* Start of Github_Box */
+.gitAccount {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #88b5b57b;
+    border-radius: 10px;
+    justify-content: center;
+    align-self: center;
+    border: 3px dashed black;
+}
+
+.gitAccount h5 {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* End of Github_Box */
+
+/* Start of Contact_Me */
+.Main_Contact_Me {
+    width: 80%;
+    margin: auto;
+    border: 2px dashed;
+    border-top: none ;
+    height: 85vh;
+  
+
+}
+
+.Main_Contact_Me img {
+
+    margin: auto;
+    width: 100%;
+
+}
+
+.Contact_Box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.CBox {
+
+    margin-bottom: 40px;
+    width: 370px;
+    height: 250px;
+    background-image: url(./Pic/colors_mix.png);
+    background-position:top ;
+    background-size: 200%;
+    transition: background-position 12s;
+    text-align: center;
+    padding-top: 20px;
+   
+}
+
+.CBox:hover{
+background-position: bottom;
+}
+.Form_Data{
+   
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+   
+}
+.Form_Data input,.Form_Data textarea{
+    margin: auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #d9dadaaa;
+    color: rgb(0, 0, 0);
+}
+.First_Name,.Last_Name{
+    width: 47%;
+    margin: auto;
+    
+}
+
+.emailx,.subjectx{
+    width: 97%;
+ 
+}
+.textx{
+    width: 97%;
+    height: 70px;
+}
+.sub{
+    margin: auto;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.792);
+}
+.sub:hover{
+    background-color: #000000;
+    color: white;
+}
+.CBox img{
+    width: 90%;
+    height:90% ;
+    border-radius: 5%;
+    
+}
+.Saying{
+    margin: auto;
+   text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Saying p span{
+    color: #f4433681;
+}
+.Social2 {
+    padding-top: 30px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.Social2 img{
+width: 50px;
+height: 50px;
+}
