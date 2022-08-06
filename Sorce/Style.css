@@ -14,6 +14,12 @@
     width: 5%;
     margin-right: 10px;
 }
+#home_icon img:hover {
+    border: 3px;
+    background-color: #f44336;
+    border-radius: 50%;
+}
+
 
 .nav_img_home {
     width: 44px;
@@ -53,7 +59,7 @@
 #nav_contant {
     border-top: 2px solid rgba(0, 255, 255, 0.250);
     border-bottom: 2px solid rgba(0, 255, 255, 0.250);
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     background-color: rgba(0, 255, 255, 0.250);
@@ -83,6 +89,14 @@
 .contant_list li {
     list-style: none;
     text-decoration: none;
+}
+#nav_contant > ul > li > a {
+    text-decoration: none;
+
+}
+#nav_contant > ul > li > a  :hover{
+    background-color: #f44336;
+    border-radius: 15px;
 }
 
 
@@ -388,6 +402,10 @@ footer ul li {
     list-style: none;
 
 }
+body > footer > ul > li  > a {
+    text-decoration: none;
+
+}
 
 /*End of footer stayling */
 
@@ -511,14 +529,19 @@ footer ul li {
 
 /* End of Github_Box */
 
+/* ************************************* Contact Me Page Start **********************************************/
+
 /* Start of Contact_Me */
 .Main_Contact_Me {
     width: 80%;
     margin: auto;
+    margin-top: 12px;
     border: 2px dashed;
-    border-top: none ;
-    height: 85vh;
-  
+    border-top: none;
+   
+    display: flex;
+    flex-wrap: wrap;
+
 
 }
 
@@ -530,6 +553,8 @@ footer ul li {
 }
 
 .Contact_Box {
+    width: 100%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -542,69 +567,85 @@ footer ul li {
     width: 370px;
     height: 250px;
     background-image: url(./Pic/colors_mix.png);
-    background-position:top ;
+    background-position: top;
     background-size: 200%;
     transition: background-position 12s;
     text-align: center;
     padding-top: 20px;
-   
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.CBox:hover{
-background-position: bottom;
+.CBox:hover {
+    background-position: bottom;
 }
-.Form_Data{
-   
+/* Form Stayling Start */
+.Form_Data {
+
     display: flex;
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
-   
+
 }
-.Form_Data input,.Form_Data textarea{
+
+.Form_Data input,
+.Form_Data textarea {
     margin: auto;
     margin-bottom: 5px;
     border-radius: 5px;
     background-color: #d9dadaaa;
     color: rgb(0, 0, 0);
 }
-.First_Name,.Last_Name{
+
+.First_Name,
+.Last_Name {
     width: 47%;
     margin: auto;
-    
+
 }
 
-.emailx,.subjectx{
+.emailx,
+.subjectx {
     width: 97%;
- 
+
 }
-.textx{
+
+.textx {
     width: 97%;
     height: 70px;
 }
-.sub{
+
+.sub {
     margin: auto;
     border-radius: 16px;
     background-color: rgba(255, 255, 255, 0.792);
 }
-.sub:hover{
+
+.sub:hover {
     background-color: #000000;
     color: white;
 }
-.CBox img{
+/* Form Stayling End */
+.CBox img {
     width: 90%;
-    height:90% ;
+    height: 90%;
     border-radius: 5%;
-    
+
 }
-.Saying{
+
+.Saying {
+    display: flex;
     margin: auto;
-   text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
 }
-.Saying p span{
+
+.Saying p span {
     color: #f4433681;
 }
+
 .Social2 {
     padding-top: 30px;
     width: 80%;
@@ -614,7 +655,189 @@ background-position: bottom;
     align-items: center;
     justify-content: space-between;
 }
-.Social2 img{
-width: 50px;
-height: 50px;
+
+.Social2 img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+/* End of Contact_Me */
+
+/* ************************************* Media Start **********************************************/
+
+@media only screen and (max-width:1100px) {
+    #nav_contant {
+        width: 60%;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    #navArch2 {
+        display: none;
+    }
+
+    #nav_social {
+        display: none;
+    }
+
+    footer ul {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:900px) {
+    #nav_contant {
+        width: 92%;
+        margin: auto;
+        margin-left: 10px;
+    }
+
+    #navArch1 {
+        display: none;
+    }
+
+    #nav_nameSection {
+        display: none;
+    }
+
+    .Main_text_contant {
+        margin-top: 5%;
+
+    }
+
+    .wana_contact_text {
+        font-size: 1.5em;
+    }
+
+}
+
+@media only screen and (max-width:835px) {
+    #nav_contant {
+        width: 92%;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width:700px) {
+    #nav_contant {
+        width: 91%;
+        height: 50px;
+        margin-left: 10px;
+
+
+    }
+
+    .contant_list {
+        flex-wrap: wrap;
+    }
+
+    .contant_list li {
+        width: 50%;
+        margin: auto;
+    }
+
+    #home_icon {
+        margin-top: 3px;
+    }
+
+    .wana_contact_text {
+        font-size: 1.2em;
+    }
+
+    .button_contact {
+        width: 22%;
+        height: 15%;
+    }
+    .carousel-item img {
+        height: 350px;
+        object-fit: fill;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    #nav_contant {
+        width: 105%;
+        height: 50px;
+        position: relative;
+        z-index: 1;
+    }
+
+    #home_icon {
+        width: 5%;
+        margin-right: 10px;
+        display: inline-block;
+        position: absolute;
+        z-index: 2;
+        margin-left: 20PX;
+        margin-top: 3px;
+    }
+
+    .button_contact {
+        width: 25%;
+        height: 17%;
+    }
+}
+@media only screen and (max-width:590px)
+{
+
+    .QBox {
+        width: 177px;
+        height: 320px;
+        transform: skew(0deg);
+        border-radius: 10px;
+        margin-bottom: 3%;
+        position: relative;
+        border: 2px solid;
+
+       
+    }
+    .QBox img{
+        border-radius: 10px;
+        width: 95%;
+        height: 95%;
+        margin-top: 7px;
+        margin-left: 4px;
+     
+       
+    }
+    .carousel-item img {
+        height: 300px;
+        object-fit: fill;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width:530px) {
+    .Main_text_contant {
+        font-size: .6em;
+    }
+    #nav_contant > ul > li > a > h6{
+        font-size: .7em;
+        
+    }
+ 
+    .button_contact {
+        width: 30%;
+        height: 12%;
+        bottom: 10%;
+        font-size: small;
+    }
+
+    .wana_contact_text {
+        font-size: .8em;
+        font-weight: bold;
+    }
+    .carousel-item img {
+        height: 280px;
+        object-fit: fill;
+        border-radius: 10px;
+    }
 }
