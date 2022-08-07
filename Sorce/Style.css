@@ -98,7 +98,7 @@
 }
 
 #nav_contant>ul>li>a :hover {
-    background-color: #f44336;
+    background-color: #ff1e1ee7;
     border-radius: 15px;
 }
 
@@ -169,6 +169,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+
 }
 
 .Main_About {
@@ -256,7 +258,7 @@
 }
 
 .button_contact:hover {
-    background-color: #f44336;
+    background-color: #0916a3c9;
     color: white;
 }
 
@@ -319,28 +321,24 @@
     border: 2px solid;
     background-color: #0000008e;
     color: white;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
-.QBox img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    border-radius: 10px;
-    width: 98%;
-    height: 98%;
-}
 
-.QBox img:hover {
-    display: none;
-    color: rgb(191, 255, 0);
+
+.QBox:hover {
+    color: rgb(255, 255, 255);
+    background-color: #0000008b;
+    width: 170px;
+    height: 340;
+    box-shadow: 10px 10px 5px rgb(36, 245, 203);
+
 
 }
 
-.QBox h5 {
-    margin-top: 20%;
-    margin-left: 5%;
-}
+
+
 
 /* End of Main Box Styleing  */
 /*Start of Back to Top stayling */
@@ -550,15 +548,15 @@ body>footer>ul>li>a {
 
 /* Start of Contact_Me */
 .Main_Contact_Me {
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 12px;
-    border: 2px dashed;
-    border-top: none;
-
+    background-image: url(./Pic/colors_mix2.png);
     display: flex;
     flex-wrap: wrap;
-
+    transition: background-position 22s;
+    background-position: top;
+    background-size: 110%;
 
 }
 
@@ -579,21 +577,22 @@ body>footer>ul>li>a {
 }
 
 .CBox {
-
+    color:white;
+   
+    background-color: rgba(64, 92, 137, 0.568);
+    margin-top: 7%;
     margin-bottom: 40px;
     width: 370px;
     height: 250px;
-    background-image: url(./Pic/colors_mix.png);
-    background-position: top;
-    background-size: 200%;
-    transition: background-position 12s;
     text-align: center;
     padding-top: 20px;
-    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
-
-.CBox:hover {
+.CBox:hover{
+    box-shadow: 10px 10px 150px rgba(127, 255, 67, 0.73);
+}
+.Main_Contact_Me:hover {
     background-position: bottom;
 }
 
@@ -656,6 +655,7 @@ body>footer>ul>li>a {
 .Saying {
     display: flex;
     margin: auto;
+    margin-top: 7%;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
